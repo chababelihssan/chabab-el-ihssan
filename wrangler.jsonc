@@ -1,0 +1,15 @@
+{
+  "name": "chabab-el-ihssan",
+  "main": "worker/index.js",
+  "compatibility_date": "2025-11-01",
+  "keep_vars": true,
+  "vars": {
+    "GITHUB_CLIENT_ID": "Ov23liNkk0UtFp0Nv8Rd"
+  },
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application",
+    "run_worker_first": ["/oauth/*"]
+  }
+}

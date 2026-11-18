@@ -1,0 +1,1142 @@
+# =============================================================================
+#  لوحة تحكم موقع شباب الإحسان   (الرابط:  /admin)
+#  ⚠️ هذا الملف يعرّف الحقول فقط. شكل اللوحة (الألوان، الدليل، المعاينة) في admin/index.html
+#  لا تغيّروا أسماء الحقول (name) فهي مرتبطة بالموقع.
+# =============================================================================
+backend:
+  name: github
+  repo: chababELihsan/chabab-el-ihssan
+  branch: main
+  base_url: https://chabab-el-ihssan.madrassat-el-istiqama.workers.dev
+  auth_endpoint: oauth/auth
+local_backend: true
+locale: ar
+logo_url: https://chababelihssan.com/wp-content/uploads/2025/03/1721052846963.png
+site_url: https://chabab-el-ihssan.madrassat-el-istiqama.workers.dev
+display_url: https://chabab-el-ihssan.madrassat-el-istiqama.workers.dev
+show_preview_links: false
+media_folder: public/images/uploads
+public_folder: /images/uploads
+slug:
+  encoding: ascii
+  clean_accents: true
+  sanitize_replacement: '-'
+collections:
+- name: news
+  label: 📰 الأخبار
+  label_singular: خبر
+  folder: src/content/news
+  extension: json
+  format: json
+  create: true
+  identifier_field: title.fr
+  thumbnail: image_url
+  view_filters:
+  - label: المثبّتة فقط
+    field: is_pinned
+    pattern: true
+  slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+  summary: '{{date}} — {{title.ar}}'
+  sortable_fields:
+  - date
+  - is_pinned
+  fields:
+  - label: تاريخ النشر
+    name: date
+    widget: datetime
+    date_format: YYYY-MM-DD
+    time_format: false
+    format: YYYY-MM-DD
+    picker_utc: false
+    required: true
+    hint: '⏰ للجدولة: اختر تاريخاً في المستقبل — يبقى الخبر مخفياً ويظهر تلقائياً في ذلك اليوم. تاريخ اليوم أو الماضي = ينشر فوراً.'
+  - label: الصورة
+    name: image_url
+    widget: image
+    required: false
+    hint: |-
+      📍 تظهر في: بطاقة الخبر في صفحة «الأخبار» وأعلى نافذة الخبر عند فتحه
+      📐 المقاس المناسب: أفقية 1200×800
+      ⬆️ اضغط «اختر صورة» ثم «رفع» — يتم تصغير الصورة تلقائياً.
+  - label: تثبيت في الأعلى
+    name: is_pinned
+    widget: boolean
+    default: false
+    required: false
+  - label: العنوان
+    name: title
+    widget: object
+    collapsed: false
+    fields:
+    - label: العربية
+      name: ar
+      widget: string
+      required: true
+    - label: Français
+      name: fr
+      widget: string
+      required: true
+      hint: 'مطلوب لتسمية الملف فقط. اكتب عنواناً قصيراً بالحروف اللاتينية (مثال: Iftar 2026) إن لم تكن تتقن الفرنسية.'
+    - label: English (اختياري)
+      name: en
+      widget: string
+      required: false
+  - label: نص الخبر
+    name: description
+    widget: object
+    collapsed: false
+    fields:
+    - label: العربية
+      name: ar
+      widget: text
+      required: true
+    - label: Français
+      name: fr
+      widget: text
+      required: true
+    - label: English (اختياري)
+      name: en
+      widget: text
+      required: false
+  - label: المكان
+    name: location
+    widget: object
+    collapsed: false
+    fields:
+    - label: العربية
+      name: ar
+      widget: string
+      required: false
+    - label: Français
+      name: fr
+      widget: string
+      required: false
+    - label: English (اختياري)
+      name: en
+      widget: string
+      required: false
+  description: كل خبر = بطاقة في صفحة «الأخبار» (/news). اضغط «＋ خبر» لإضافة خبر جديد، أو اختر خبراً لتعديل صورته أو نصه.
+- name: media
+  label: 🖼️ الصور والوسائط
+  files:
+  - name: gallery
+    label: 🖼️ معرض الصور (أضف أو احذف صوراً)
+    file: src/content/gallery.json
+    format: json
+    fields:
+    - label: الصور (اضغط ＋ لإضافة صورة، أو اسحب لتغيير الترتيب)
+      name: images
+      widget: list
+      fields:
+      - label: الصورة
+        name: image_url
+        widget: image
+        required: true
+        hint: |-
+          📍 تظهر في: شريط الصور المتحرك في الصفحة الرئيسية وصفحة «المعرض»
+          📐 المقاس المناسب: أي مقاس — يُفضّل أفقية 1200×800
+          ⬆️ اضغط «اختر صورة» ثم «رفع» — يتم تصغير الصورة تلقائياً.
+      - label: التعليق
+        name: caption
+        widget: object
+        collapsed: false
+        fields:
+        - label: العربية
+          name: ar
+          widget: string
+          required: false
+        - label: Français
+          name: fr
+          widget: string
+          required: false
+        - label: English (اختياري)
+          name: en
+          widget: string
+          required: false
+      - label: القسم
+        name: category
+        widget: relation
+        collection: media
+        file: gallery
+        search_fields:
+        - categories.*.id
+        value_field: categories.*.id
+        display_fields:
+        - categories.*.id
+      - label: صورة مميزة
+        name: is_featured
+        widget: boolean
+        default: false
+        required: false
+      required: false
+      summary: '{{fields.caption.ar}} — {{fields.category}}'
+      collapsed: true
+      label_singular: صورة
+    - label: أقسام المعرض (الأزرار التي تُصفّي الصور)
+      name: categories
+      widget: list
+      fields:
+      - label: المعرّف (أحرف لاتينية صغيرة بلا مسافات)
+        name: id
+        widget: string
+        pattern:
+        - ^[a-z0-9-]+$
+        - أحرف لاتينية صغيرة وأرقام وشرطة فقط
+      - label: اسم القسم
+        name: label
+        widget: object
+        collapsed: false
+        fields:
+        - label: العربية
+          name: ar
+          widget: string
+          required: true
+        - label: Français
+          name: fr
+          widget: string
+          required: true
+        - label: English (اختياري)
+          name: en
+          widget: string
+          required: false
+      required: false
+      summary: '{{fields.label.ar}}'
+      label_singular: قسم
+  - name: projects
+    label: 🏗️ فئات المشاريع وصورها (صفحة «برامجنا»)
+    file: src/content/projects.json
+    format: json
+    fields:
+    - label: الفئات الرئيسية للمشاريع
+      name: categories
+      widget: list
+      fields:
+      - label: المعرّف (أحرف لاتينية صغيرة بلا مسافات)
+        name: id
+        widget: string
+        pattern:
+        - ^[a-z0-9-]+$
+        - أحرف لاتينية صغيرة وأرقام وشرطة فقط
+      - label: صورة الفئة
+        name: image
+        widget: image
+        required: false
+        hint: |-
+          📍 تظهر في: بطاقة الفئة في قسم «برامجنا» بالصفحة الرئيسية
+          📐 المقاس المناسب: أفقية 1200×800
+          ⬆️ اضغط «اختر صورة» ثم «رفع» — يتم تصغير الصورة تلقائياً.
+      - label: اسم الفئة
+        name: title
+        widget: object
+        collapsed: false
+        fields:
+        - label: العربية
+          name: ar
+          widget: string
+          required: true
+        - label: Français
+          name: fr
+          widget: string
+          required: true
+        - label: English (اختياري)
+          name: en
+          widget: string
+          required: false
+      - label: وصف قصير
+        name: description
+        widget: object
+        collapsed: false
+        fields:
+        - label: العربية
+          name: ar
+          widget: string
+          required: false
+        - label: Français
+          name: fr
+          widget: string
+          required: false
+        - label: English (اختياري)
+          name: en
+          widget: string
+          required: false
+      - label: المشاريع داخل الفئة
+        name: items
+        widget: list
+        fields:
+        - label: المعرّف
+          name: id
+          widget: string
+          required: false
+        - label: الصورة
+          name: image
+          widget: image
+          required: false
+          hint: |-
+            📍 تظهر في: بطاقة المشروع داخل الفئة (عند الضغط على الفئة)
+            📐 المقاس المناسب: أفقية 1200×800
+            ⬆️ اضغط «اختر صورة» ثم «رفع» — يتم تصغير الصورة تلقائياً.
+        - label: اسم المشروع
+          name: title
+          widget: object
+          collapsed: false
+          fields:
+          - label: العربية
+            name: ar
+            widget: string
+            required: true
+          - label: Français
+            name: fr
+            widget: string
+            required: true
+          - label: English (اختياري)
+            name: en
+            widget: string
+            required: false
+        required: false
+        summary: '{{fields.title.ar}}'
+        label_singular: مشروع
+      required: false
+      summary: '{{fields.title.ar}}'
+      label_singular: فئة
+  - name: media
+    label: 🏠 صورة الواجهة الرئيسية + قبل/بعد + الفيديو + الخريطة
+    file: src/content/media.json
+    format: json
+    fields:
+    - label: 🏠 صورة الواجهة الرئيسية (أول ما يراه الزائر)
+      name: heroImage
+      widget: image
+      required: false
+      hint: |-
+        📍 تظهر في: أعلى الصفحة الرئيسية (الخلفية الكبيرة)
+        📐 المقاس المناسب: أفقية كبيرة 1920×1080
+        ⬆️ اضغط «اختر صورة» ثم «رفع» — يتم تصغير الصورة تلقائياً.
+    - label: ↔️ قبل / بعد (شريط تمرير)
+      name: beforeAfter
+      widget: list
+      fields:
+      - label: المعرّف
+        name: id
+        widget: string
+        required: false
+      - label: صورة «قبل»
+        name: before
+        widget: image
+        required: false
+        hint: |-
+          📍 تظهر في: الجهة اليسرى من شريط «قبل/بعد» (اتركها فارغة إن لم توجد صورة قبل)
+          📐 المقاس المناسب: نفس مقاس صورة «بعد» 1200×900
+          ⬆️ اضغط «اختر صورة» ثم «رفع» — يتم تصغير الصورة تلقائياً.
+      - label: صورة «بعد»
+        name: after
+        widget: image
+        required: true
+        hint: |-
+          📍 تظهر في: الجهة اليمنى من شريط «قبل/بعد»
+          📐 المقاس المناسب: 1200×900
+          ⬆️ اضغط «اختر صورة» ثم «رفع» — يتم تصغير الصورة تلقائياً.
+      - label: العنوان
+        name: title
+        widget: object
+        collapsed: false
+        fields:
+        - label: العربية
+          name: ar
+          widget: string
+          required: true
+        - label: Français
+          name: fr
+          widget: string
+          required: true
+        - label: English (اختياري)
+          name: en
+          widget: string
+          required: false
+      - label: تعليق
+        name: caption
+        widget: object
+        collapsed: false
+        fields:
+        - label: العربية
+          name: ar
+          widget: string
+          required: false
+        - label: Français
+          name: fr
+          widget: string
+          required: false
+        - label: English (اختياري)
+          name: en
+          widget: string
+          required: false
+      required: false
+      summary: '{{fields.title.ar}}'
+      label_singular: صورة قبل/بعد
+    - label: 🎬 فيديو الصفحة الرئيسية (اختياري)
+      name: heroVideo
+      widget: object
+      fields:
+      - label: معرّف فيديو يوتيوب
+        name: youtubeId
+        widget: string
+        required: false
+        hint: 'الجزء الأخير من الرابط، مثال: dQw4w9WgXcQ. اتركه فارغًا لإخفاء الزر.'
+      - label: أو رابط ملف فيديو
+        name: src
+        widget: string
+        required: false
+      - label: صورة الغلاف
+        name: poster
+        widget: string
+        required: false
+    - label: 🗺️ خريطة الإنجازات
+      name: achievementPlaces
+      widget: list
+      fields:
+      - label: المعرّف
+        name: id
+        widget: string
+        required: false
+      - label: اسم الولاية
+        name: name
+        widget: object
+        collapsed: false
+        fields:
+        - label: العربية
+          name: ar
+          widget: string
+          required: true
+        - label: Français
+          name: fr
+          widget: string
+          required: true
+        - label: English (اختياري)
+          name: en
+          widget: string
+          required: false
+      - label: خط العرض (Latitude)
+        name: lat
+        widget: number
+        value_type: float
+        min: -90
+        max: 90
+        step: 0.0001
+      - label: خط الطول (Longitude)
+        name: lng
+        widget: number
+        value_type: float
+        min: -180
+        max: 180
+        step: 0.0001
+      - label: الأعمال المنجزة هناك
+        name: actions
+        widget: list
+        fields:
+        - label: العربية
+          name: ar
+          widget: string
+        - label: Français
+          name: fr
+          widget: string
+        - label: English
+          name: en
+          widget: string
+          required: false
+        required: false
+        summary: '{{fields.fr}}'
+      required: false
+      summary: '{{fields.name.ar}}'
+      label_singular: ولاية
+    - label: 🤲 مشاريع الصدقة الجارية
+      name: sadaqaProjects
+      widget: list
+      fields:
+      - label: المعرّف
+        name: id
+        widget: string
+        required: false
+      - label: الأيقونة
+        name: icon
+        widget: select
+        options:
+        - label: بئر / ماء
+          value: well
+        - label: مدرسة
+          value: school
+        - label: سيارة إسعاف
+          value: ambulance
+        - label: خزان
+          value: tank
+        default: well
+      - label: العنوان
+        name: title
+        widget: object
+        collapsed: false
+        fields:
+        - label: العربية
+          name: ar
+          widget: string
+          required: true
+        - label: Français
+          name: fr
+          widget: string
+          required: true
+        - label: English (اختياري)
+          name: en
+          widget: string
+          required: false
+      - label: الوصف
+        name: description
+        widget: object
+        collapsed: false
+        fields:
+        - label: العربية
+          name: ar
+          widget: text
+          required: true
+        - label: Français
+          name: fr
+          widget: text
+          required: true
+        - label: English (اختياري)
+          name: en
+          widget: text
+          required: false
+      required: false
+      summary: '{{fields.title.ar}}'
+      label_singular: مشروع
+  description: 'هنا كل الصور الكبيرة في الموقع: صورة الواجهة، المعرض، صور المشاريع، قبل/بعد. اختر القسم ثم غيّر الصورة واضغط «نشر».'
+- name: activities
+  label: 🎯 الأنشطة والمشاريع
+  label_singular: نشاط
+  folder: src/content/activities
+  extension: json
+  format: json
+  create: true
+  identifier_field: title.fr
+  thumbnail: image_url
+  slug: '{{category}}-{{slug}}'
+  summary: '{{category}} — {{title.ar}}'
+  sortable_fields:
+  - date
+  - category
+  fields:
+  - label: النوع
+    name: category
+    widget: select
+    options:
+    - label: مشروع (Projet)
+      value: project
+    - label: حدث / فعالية (Événement)
+      value: event
+    - label: برنامج (Programme)
+      value: program
+    default: project
+  - label: تاريخ البداية
+    name: date
+    widget: datetime
+    date_format: YYYY-MM-DD
+    time_format: false
+    format: YYYY-MM-DD
+    picker_utc: false
+    required: true
+  - label: تاريخ النهاية (اختياري)
+    name: end_date
+    widget: datetime
+    date_format: YYYY-MM-DD
+    time_format: false
+    format: YYYY-MM-DD
+    picker_utc: false
+    required: false
+  - label: الصورة
+    name: image_url
+    widget: image
+    required: false
+    hint: |-
+      📍 تظهر في: بطاقة النشاط في صفحة «برامجنا» وأعلى نافذته
+      📐 المقاس المناسب: أفقية 1200×800
+      ⬆️ اضغط «اختر صورة» ثم «رفع» — يتم تصغير الصورة تلقائياً.
+  - label: تثبيت في الأعلى
+    name: is_pinned
+    widget: boolean
+    default: false
+    required: false
+  - label: العنوان
+    name: title
+    widget: object
+    collapsed: false
+    fields:
+    - label: العربية
+      name: ar
+      widget: string
+      required: true
+    - label: Français
+      name: fr
+      widget: string
+      required: true
+      hint: 'مطلوب لتسمية الملف فقط. اكتب عنواناً قصيراً بالحروف اللاتينية (مثال: Iftar 2026) إن لم تكن تتقن الفرنسية.'
+    - label: English (اختياري)
+      name: en
+      widget: string
+      required: false
+  - label: الوصف
+    name: description
+    widget: object
+    collapsed: false
+    fields:
+    - label: العربية
+      name: ar
+      widget: text
+      required: true
+    - label: Français
+      name: fr
+      widget: text
+      required: true
+    - label: English (اختياري)
+      name: en
+      widget: text
+      required: false
+  - label: المكان
+    name: location
+    widget: object
+    collapsed: false
+    fields:
+    - label: العربية
+      name: ar
+      widget: string
+      required: false
+    - label: Français
+      name: fr
+      widget: string
+      required: false
+    - label: English (اختياري)
+      name: en
+      widget: string
+      required: false
+  description: المشاريع والفعاليات التي تظهر في صفحة «برامجنا». كل عنصر له صورة واحدة.
+- name: numbers
+  label: 📊 الأرقام والحملة
+  files:
+  - name: impact
+    label: 📊 أرقام «أثرنا في المجتمع»
+    file: src/content/impact.json
+    format: json
+    fields:
+    - label: عنوان القسم
+      name: title
+      widget: object
+      collapsed: false
+      fields:
+      - label: العربية
+        name: ar
+        widget: string
+        required: true
+      - label: Français
+        name: fr
+        widget: string
+        required: true
+      - label: English (اختياري)
+        name: en
+        widget: string
+        required: false
+    - label: جملة تحت العنوان
+      name: description
+      widget: object
+      collapsed: false
+      fields:
+      - label: العربية
+        name: ar
+        widget: string
+        required: true
+      - label: Français
+        name: fr
+        widget: string
+        required: true
+      - label: English (اختياري)
+        name: en
+        widget: string
+        required: false
+    - label: الأرقام (يُنصح بـ 4)
+      name: stats
+      widget: list
+      fields:
+      - label: الرقم
+        name: number
+        widget: string
+        hint: 'مثال: 13,000+ أو 318. الرمز + اختياري.'
+      - label: الأيقونة
+        name: icon
+        widget: select
+        options:
+        - label: وجبات
+          value: meals
+        - label: ملابس
+          value: clothes
+        - label: هلال / رمضان
+          value: moon
+        - label: قوافل
+          value: caravan
+        - label: أشخاص
+          value: people
+        - label: قلب
+          value: heart
+        - label: ماء
+          value: water
+        - label: مدرسة
+          value: school
+        - label: سيارة إسعاف
+          value: ambulance
+        - label: مسكن
+          value: home
+        - label: قفة
+          value: basket
+        - label: تبرع
+          value: donation
+        default: heart
+      - label: الوصف تحت الرقم
+        name: label
+        widget: object
+        collapsed: false
+        fields:
+        - label: العربية
+          name: ar
+          widget: string
+          required: true
+        - label: Français
+          name: fr
+          widget: string
+          required: true
+        - label: English (اختياري)
+          name: en
+          widget: string
+          required: false
+      required: false
+      summary: '{{fields.number}}'
+      collapsed: false
+      min: 1
+      max: 8
+      label_singular: رقم
+  - name: campaign
+    label: 💰 الحملة الحالية (المبلغ + العدّ التنازلي)
+    file: src/content/campaign.json
+    format: json
+    fields:
+    - label: إظهار قسم الحملة في الصفحة الرئيسية
+      name: enabled
+      widget: boolean
+      default: true
+      required: false
+    - label: عنوان الحملة
+      name: title
+      widget: object
+      collapsed: false
+      fields:
+      - label: العربية
+        name: ar
+        widget: string
+        required: true
+      - label: Français
+        name: fr
+        widget: string
+        required: true
+      - label: English (اختياري)
+        name: en
+        widget: string
+        required: false
+    - label: وصف الحملة
+      name: description
+      widget: object
+      collapsed: false
+      fields:
+      - label: العربية
+        name: ar
+        widget: text
+        required: true
+      - label: Français
+        name: fr
+        widget: text
+        required: true
+      - label: English (اختياري)
+        name: en
+        widget: text
+        required: false
+    - label: الهدف (دج)
+      name: goal
+      widget: number
+      value_type: int
+      min: 0
+      hint: المبلغ المطلوب جمعه بالدينار الجزائري.
+    - label: المبلغ المجموع إلى الآن (دج)
+      name: raised
+      widget: number
+      value_type: int
+      min: 0
+      hint: عدّلوا هذا الرقم كلما وصلتكم تبرعات جديدة.
+    - label: تاريخ ونهاية الحملة
+      name: endDate
+      widget: datetime
+      date_format: YYYY-MM-DD
+      time_format: HH:mm
+      format: YYYY-MM-DDTHH:mm:ss
+      picker_utc: false
+      hint: العدّ التنازلي يتوقف عند هذا التاريخ.
+  - name: ramadan
+    label: 🌙 وضع رمضان (العدّ التنازلي + السلة + زكاة الفطر)
+    file: src/content/ramadan.json
+    format: json
+    fields:
+    - label: تفعيل قسم رمضان
+      name: enabled
+      widget: boolean
+      default: true
+      required: false
+      hint: يظهر القسم تلقائيًا قبل رمضان بعدد الأيام المحدد أدناه، ويختفي بعد نهايته.
+    - label: أول يوم من رمضان
+      name: start_date
+      widget: datetime
+      date_format: YYYY-MM-DD
+      time_format: false
+      format: YYYY-MM-DD
+      picker_utc: false
+      hint: عدّلوه حسب الرؤية الرسمية في الجزائر.
+    - label: عدد أيام رمضان
+      name: days
+      widget: number
+      value_type: int
+      min: 29
+      max: 30
+      default: 30
+    - label: يظهر القسم قبل رمضان بـ (يوم)
+      name: show_days_before
+      widget: number
+      value_type: int
+      min: 0
+      max: 365
+      default: 60
+      hint: ارفعوا الرقم (مثلاً 120) إن أردتم معاينة القسم الآن.
+    - label: سعر سلة رمضان (دج)
+      name: basket_price
+      widget: number
+      value_type: int
+      min: 0
+    - label: زكاة الفطر للفرد (دج)
+      name: fitr_amount
+      widget: number
+      value_type: int
+      min: 0
+      hint: راجعوا القيمة الرسمية التي تعلنها وزارة الشؤون الدينية كل سنة.
+  description: الأرقام التي يراها الزائر في الصفحة الرئيسية، والحملة الحالية (المبلغ + العدّ التنازلي).
+- name: testimonials
+  label: 💬 آراء المتابعين
+  label_singular: رأي
+  folder: src/content/testimonials
+  extension: json
+  format: json
+  create: true
+  identifier_field: name
+  thumbnail: image_url
+  slug: avis-{{year}}{{month}}{{day}}-{{hour}}{{minute}}{{second}}
+  summary: '{{name}}'
+  fields:
+  - label: الاسم
+    name: name
+    widget: string
+  - label: منشور في الموقع
+    name: is_approved
+    widget: boolean
+    default: true
+    required: false
+  - label: الصورة (اختياري)
+    name: image_url
+    widget: image
+    required: false
+    hint: |-
+      📍 تظهر في: دائرة صغيرة فوق نص الرأي
+      📐 المقاس المناسب: مربعة 400×400 (وجه الشخص في الوسط)
+      ⬆️ اضغط «اختر صورة» ثم «رفع» — يتم تصغير الصورة تلقائياً.
+  - label: الصفة
+    name: role
+    widget: object
+    collapsed: false
+    fields:
+    - label: العربية
+      name: ar
+      widget: string
+      required: false
+    - label: Français
+      name: fr
+      widget: string
+      required: false
+    - label: English (اختياري)
+      name: en
+      widget: string
+      required: false
+  - label: نص الرأي
+    name: content
+    widget: object
+    collapsed: false
+    fields:
+    - label: العربية
+      name: ar
+      widget: text
+      required: false
+    - label: Français
+      name: fr
+      widget: text
+      required: false
+    - label: English (اختياري)
+      name: en
+      widget: text
+      required: false
+    hint: يكفي كتابته مرة واحدة؛ إن تُرك فارغًا بإحدى اللغات تُستعمل لغة أخرى تلقائيًا.
+  description: آراء تظهر في قسم «آراء المتابعين». الصورة دائرية وصغيرة. أوقف «منشور في الموقع» لإخفاء رأي دون حذفه.
+- name: settings
+  label: ⚙️ إعدادات الموقع
+  files:
+  - name: settings
+    label: ⚙️ الشعار والاتصال وروابط التواصل
+    file: src/content/settings.json
+    format: json
+    fields:
+    - label: شعار الجمعية
+      name: logo_url
+      widget: image
+      required: true
+      hint: |-
+        📍 تظهر في: أعلى كل صفحة (الشريط العلوي) وفي أسفل الموقع وعند مشاركة الرابط
+        📐 المقاس المناسب: مربعة 512×512، خلفية شفافة (PNG)
+        ⬆️ اضغط «اختر صورة» ثم «رفع» — يتم تصغير الصورة تلقائياً.
+    - label: عنوان الموقع (لمحركات البحث)
+      name: site_url
+      widget: string
+      hint: 'مثال: https://chababelihssan.com — بدون / في النهاية.'
+    - label: البريد الإلكتروني
+      name: email
+      widget: string
+    - label: الهاتف كما يظهر في الموقع
+      name: phone_display
+      widget: string
+    - label: حسابات التبرع (صفحة «تبرّع»)
+      name: payment
+      widget: object
+      collapsed: false
+      hint: تظهر كل خانة مملوءة فقط في صفحة التبرع مع زر «نسخ» ورمز QR. اتركوا الفارغ كما هو.
+      fields:
+      - label: اسم صاحب الحساب
+        name: account_name
+        widget: string
+        required: false
+      - label: رقم حساب CCP
+        name: ccp_number
+        widget: string
+        required: false
+        hint: مثال 0012345678 — لبريدي موب.
+      - label: مفتاح CCP (Clé)
+        name: ccp_key
+        widget: string
+        required: false
+      - label: RIP (20 رقمًا)
+        name: rip
+        widget: string
+        required: false
+        hint: يجده المتبرع في تطبيق بريدي موب؛ إن وُضع فهو الذي يُحوَّل إلى QR.
+      - label: رقم الحساب البنكي CPA
+        name: cpa_account
+        widget: string
+        required: false
+    - label: العنوان
+      name: address
+      widget: object
+      collapsed: false
+      fields:
+      - label: العربية
+        name: ar
+        widget: string
+        required: false
+      - label: Français
+        name: fr
+        widget: string
+        required: false
+      - label: English (اختياري)
+        name: en
+        widget: string
+        required: false
+    - label: روابط التواصل
+      name: social
+      widget: object
+      fields:
+      - label: فيسبوك
+        name: facebook
+        widget: string
+        required: false
+      - label: إنستغرام
+        name: instagram
+        widget: string
+        required: false
+      - label: X (تويتر)
+        name: x
+        widget: string
+        required: false
+      - label: يوتيوب
+        name: youtube
+        widget: string
+        required: false
+      - label: تيك توك
+        name: tiktok
+        widget: string
+        required: false
+    - label: قسم منشورات فيسبوك وإنستغرام
+      name: social_feed
+      widget: object
+      fields:
+      - label: إظهار القسم في الصفحة الرئيسية
+        name: enabled
+        widget: boolean
+        default: true
+        required: false
+      - label: رابط صفحة فيسبوك
+        name: facebook_page_url
+        widget: string
+        hint: 'مثال: https://www.facebook.com/chababelihssan3 — تظهر منشوراتها تلقائيًا.'
+      - label: رابط خلاصة إنستغرام (JSON)
+        name: instagram_feed_url
+        widget: string
+        required: false
+        hint: رابط من خدمة مثل behold.so يبدأ بـ https://feeds.behold.so/ . بدونه تظهر المنشورات اليدوية أدناه.
+      - label: منشورات إنستغرام يدوية (بديل)
+        name: instagram_manual_posts
+        widget: list
+        fields:
+        - label: الصورة
+          name: image
+          widget: image
+          required: true
+          hint: |-
+            📍 تظهر في: منشورات إنستغرام اليدوية في قسم «منشورات فيسبوك وإنستغرام»
+            📐 المقاس المناسب: مربعة 800×800
+            ⬆️ اضغط «اختر صورة» ثم «رفع» — يتم تصغير الصورة تلقائياً.
+        - label: رابط المنشور على إنستغرام
+          name: link
+          widget: string
+        - label: تعليق قصير
+          name: caption
+          widget: string
+          required: false
+        required: false
+        max: 6
+        summary: '{{fields.link}}'
+  - name: announcement
+    label: 📢 شريط الإعلان (أعلى الموقع)
+    file: src/content/announcement.json
+    format: json
+    fields:
+    - label: تفعيل الشريط
+      name: enabled
+      widget: boolean
+      default: false
+      required: false
+      hint: 'شغّله لإظهار الشريط في أعلى كل صفحات الموقع، وأوقفه لإخفائه.'
+    - label: نص الإعلان
+      name: text
+      widget: object
+      collapsed: false
+      fields:
+      - label: العربية
+        name: ar
+        widget: string
+        required: false
+      - label: Français
+        name: fr
+        widget: string
+        required: false
+      - label: English (اختياري)
+        name: en
+        widget: string
+        required: false
+    - label: رابط الزر (اختياري)
+      name: link
+      widget: string
+      required: false
+      hint: 'مثال: /donate للانتقال لصفحة التبرع، أو رابط كامل https://… . اتركه فارغاً لإخفاء الزر.'
+    - label: كلمة الزر
+      name: button
+      widget: object
+      collapsed: true
+      fields:
+      - label: العربية
+        name: ar
+        widget: string
+        required: false
+      - label: Français
+        name: fr
+        widget: string
+        required: false
+      - label: English (اختياري)
+        name: en
+        widget: string
+        required: false
+    - label: لون الشريط
+      name: color
+      widget: select
+      options:
+      - label: أحمر
+        value: red
+      - label: أخضر
+        value: green
+      - label: ذهبي
+        value: gold
+      - label: أسود
+        value: dark
+      default: red
+    - label: يختفي تلقائياً بعد هذا اليوم (اختياري)
+      name: end_date
+      widget: string
+      required: false
+      hint: 'بصيغة 2026-12-31 — اتركه فارغاً ليبقى ظاهراً حتى توقفه يدوياً.'
+  - name: branches
+    label: 📍 الفروع والخريطة
+    file: src/content/branches.json
+    format: json
+    fields:
+    - label: الفروع / المقرات
+      name: branches
+      widget: list
+      fields:
+      - label: المدينة
+        name: city
+        widget: string
+      - label: اسم الفرع
+        name: name
+        widget: string
+      - label: العنوان
+        name: address
+        widget: string
+      - label: الهاتف
+        name: phone
+        widget: string
+        required: false
+      - label: البريد الإلكتروني
+        name: email
+        widget: string
+        required: false
+      - label: خط العرض (Latitude)
+        name: lat
+        widget: number
+        value_type: float
+        min: -90
+        max: 90
+        step: 0.0001
+      - label: خط الطول (Longitude)
+        name: lng
+        widget: number
+        value_type: float
+        min: -180
+        max: 180
+        step: 0.0001
+      - label: رابط Google Maps
+        name: google_map_link
+        widget: string
+        required: false
+      required: false
+      summary: '{{fields.name}} — {{fields.city}}'
+  description: الشعار، الهاتف، البريد، روابط فيسبوك وإنستغرام، والفروع.

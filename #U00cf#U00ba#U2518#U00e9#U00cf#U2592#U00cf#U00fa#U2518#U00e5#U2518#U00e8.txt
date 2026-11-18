@@ -1,0 +1,11 @@
+الملفات التي تغيّرت عن النسخة السابقة (ارفعها كلها على GitHub بنفس أماكنها):
+
+داخل public/admin :
+  admin.js  admin.css  config.yml        (مجلد 2_مجلد_admin_فقط)
+
+داخل src (ميزة شريط الإعلان + جدولة الأخبار — تمس الموقع):
+  src/content/announcement.json          (ملف جديد)
+  src/components/AnnouncementBar.jsx     (ملف جديد)
+  src/components/Layout.jsx              (تعديل)
+  src/data/content.js                    (تعديل)
+  src/context/DataContext.jsx            (تعديل)

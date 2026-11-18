@@ -1,0 +1,10 @@
+<?php
+// انسخ هذا الملف إلى جذر حساب cPanel (فوق public_html) باسم: cei-oauth-config.php
+// لا ترفعه إلى GitHub أبدًا!
+return [
+    'client_id'     => 'PUT_GITHUB_CLIENT_ID_HERE',
+    'client_secret' => 'PUT_GITHUB_CLIENT_SECRET_HERE',
+    'site_url'      => 'https://YOUR-DOMAIN.dz',   // بدون / في الأخير
+    // مستودع عام => 'public_repo' (الأأمن). مستودع خاص => 'repo' (صلاحية أوسع، استعمل حساب GitHub مخصص للجمعية فقط)
+    'scope'         => 'public_repo',
+];
