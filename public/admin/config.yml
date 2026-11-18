@@ -7,20 +7,22 @@ backend:
   name: github
   repo: chababELihsan/chabab-el-ihssan
   branch: main
-  base_url: https://chabab-el-ihssan.madrassat-el-istiqama.workers.dev
+  base_url: https://chababelihssan.com
   auth_endpoint: oauth/auth
-local_backend: true
+
 locale: ar
 logo_url: https://chababelihssan.com/wp-content/uploads/2025/03/1721052846963.png
-site_url: https://chabab-el-ihssan.madrassat-el-istiqama.workers.dev
-display_url: https://chabab-el-ihssan.madrassat-el-istiqama.workers.dev
+site_url: https://chababelihssan.com
+display_url: https://chababelihssan.com
 show_preview_links: false
 media_folder: public/images/uploads
 public_folder: /images/uploads
+
 slug:
   encoding: ascii
   clean_accents: true
   sanitize_replacement: '-'
+
 collections:
 - name: news
   label: 📰 الأخبار
