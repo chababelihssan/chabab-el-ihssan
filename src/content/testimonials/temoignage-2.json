@@ -1,0 +1,15 @@
+{
+  "name": "Facebook user",
+  "is_approved": false,
+  "image_url": "",
+  "role": {
+    "ar": "مستخدم فيسبوك",
+    "fr": "Utilisateur Facebook",
+    "en": "Facebook user"
+  },
+  "content": {
+    "ar": "Bravo et bonne continuation inchallah ✌️",
+    "fr": "Bravo et bonne continuation inchallah ✌️",
+    "en": "Bravo et bonne continuation inchallah ✌️"
+  }
+}

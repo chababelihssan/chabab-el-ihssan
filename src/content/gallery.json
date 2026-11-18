@@ -1,0 +1,440 @@
+{
+  "categories": [
+    {
+      "id": "ramadan",
+      "label": {
+        "ar": "حملات رمضان",
+        "fr": "Campagnes du Ramadan",
+        "en": "Ramadan campaigns"
+      }
+    },
+    {
+      "id": "eid",
+      "label": {
+        "ar": "ملابس العيد",
+        "fr": "Vêtements de l'Aïd",
+        "en": "Eid clothes"
+      }
+    },
+    {
+      "id": "caravans",
+      "label": {
+        "ar": "قوافل إحسان",
+        "fr": "Kawafil Ihssan",
+        "en": "Ihssan caravans"
+      }
+    },
+    {
+      "id": "water",
+      "label": {
+        "ar": "مشاريع سقيا",
+        "fr": "Projets Siqaya (eau)",
+        "en": "Siqaya (water)"
+      }
+    },
+    {
+      "id": "aid",
+      "label": {
+        "ar": "قفف ومساعدات",
+        "fr": "Couffins et aides",
+        "en": "Baskets & aid"
+      }
+    },
+    {
+      "id": "health",
+      "label": {
+        "ar": "صحة وإسعاف",
+        "fr": "Santé et ambulances",
+        "en": "Health & ambulances"
+      }
+    },
+    {
+      "id": "team",
+      "label": {
+        "ar": "فريقنا",
+        "fr": "Notre équipe",
+        "en": "Our team"
+      }
+    },
+    {
+      "id": "construction",
+      "label": {
+        "ar": "ورشات البناء",
+        "fr": "Chantiers de construction",
+        "en": "Building sites"
+      }
+    }
+  ],
+  "images": [
+    {
+      "category": "construction",
+      "image_url": "/images/gallery/construction/chantier-structure.webp",
+      "caption": {
+        "ar": "هيكل البناء قيد الإنجاز",
+        "fr": "Structure du bâtiment en cours de construction",
+        "en": "Building structure under construction"
+      },
+      "is_featured": false
+    },
+    {
+      "category": "aid",
+      "image_url": "//images/gallery/aid/livraison-couvertures-huile.webp",
+      "caption": {
+        "ar": "تفريغ البطانيات والزيت من الشاحنة",
+        "fr": "Déchargement de couvertures et d'huile",
+        "en": "Unloading blankets and cooking oil"
+      },
+      "is_featured": true
+    },
+    {
+      "category": "water",
+      "image_url": "/images/gallery/water/eau-jaillit.webp",
+      "caption": {
+        "ar": "بئر ارتوازية",
+        "fr": "Puits artésien",
+        "en": "Artesian well"
+      },
+      "is_featured": false
+    },
+    {
+      "category": "caravans",
+      "image_url": "/images/gallery/caravans/kafila-sahara-rencontre.webp",
+      "caption": {
+        "ar": "قافلة الإحسان",
+        "fr": "Kafilat Elihssan",
+        "en": "Kafilat Elihssan"
+      },
+      "is_featured": true
+    },
+    {
+      "category": "eid",
+      "image_url": "/images/gallery/eid/aid-vetements-fille.webp",
+      "caption": {
+        "ar": "ملابس العيد 2025",
+        "fr": "Vêtements de l'Aïd 2025",
+        "en": "Eid Clothes 2025"
+      },
+      "is_featured": false
+    },
+    {
+      "category": "ramadan",
+      "image_url": "/images/gallery/ramadan/panier-legumes-preparation.webp",
+      "caption": {
+        "ar": "قفة الخضر",
+        "fr": "Panier à légumes",
+        "en": "Vegetable basket"
+      },
+      "is_featured": false
+    },
+    {
+      "category": "water",
+      "image_url": "/images/gallery/water/forage-puits-01.webp",
+      "caption": {
+        "ar": "آلة حفر البئر الارتوازية",
+        "fr": "Machine de forage du puits artésien",
+        "en": "Artesian well drilling rig"
+      },
+      "is_featured": false
+    },
+    {
+      "category": "water",
+      "image_url": "/images/gallery/water/forage-puits-02.webp",
+      "caption": {
+        "ar": "حفر بئر ارتوازية",
+        "fr": "Forage d'un puits artésien",
+        "en": "Artesian well drilling"
+      },
+      "is_featured": false
+    },
+    {
+      "category": "water",
+      "image_url": "/images/gallery/water/forage-puits-03.webp",
+      "caption": {
+        "ar": "متابعة أشغال الحفر",
+        "fr": "Suivi des travaux de forage",
+        "en": "Following the drilling works"
+      },
+      "is_featured": false
+    },
+    {
+      "category": "water",
+      "image_url": "/images/gallery/water/installation-pompe.webp",
+      "caption": {
+        "ar": "تركيب المضخة الغاطسة",
+        "fr": "Installation de la pompe immergée",
+        "en": "Installing the submersible pump"
+      },
+      "is_featured": false
+    },
+    {
+      "category": "water",
+      "image_url": "/images/gallery/water/chateau-eau.webp",
+      "caption": {
+        "ar": "خزان الماء",
+        "fr": "Château d'eau",
+        "en": "Water tank"
+      },
+      "is_featured": false
+    },
+    {
+      "category": "water",
+      "image_url": "/images/gallery/water/fontaine-sadaqa-jariya.webp",
+      "caption": {
+        "ar": "سقيا – صدقة جارية",
+        "fr": "Siqaya – Sadaqa Jariya",
+        "en": "Siqaya – ongoing charity"
+      },
+      "is_featured": false
+    },
+    {
+      "category": "caravans",
+      "image_url": "/images/gallery/caravans/kafila-dechargement.webp",
+      "caption": {
+        "ar": "تفريغ مساعدات القافلة",
+        "fr": "Déchargement des aides de la caravane",
+        "en": "Unloading caravan aid"
+      },
+      "is_featured": false
+    },
+    {
+      "category": "caravans",
+      "image_url": "/images/gallery/caravans/kafila-matelas.webp",
+      "caption": {
+        "ar": "توزيع الفرش والأغطية",
+        "fr": "Distribution de matelas et couvertures",
+        "en": "Distributing mattresses and blankets"
+      },
+      "is_featured": false
+    },
+    {
+      "category": "caravans",
+      "image_url": "/images/gallery/caravans/kafila-campement.webp",
+      "caption": {
+        "ar": "أسر في الجنوب الكبير",
+        "fr": "Familles du Grand Sud",
+        "en": "Families of the Great South"
+      },
+      "is_featured": false
+    },
+    {
+      "category": "caravans",
+      "image_url": "/images/gallery/caravans/kafila-enfants.webp",
+      "caption": {
+        "ar": "إدخال الفرحة على الأطفال",
+        "fr": "Un moment de joie pour les enfants",
+        "en": "Bringing joy to the children"
+      },
+      "is_featured": false
+    },
+    {
+      "category": "ramadan",
+      "image_url": "/images/gallery/ramadan/distribution-paniers.webp",
+      "caption": {
+        "ar": "توزيع القفف على الأسر",
+        "fr": "Distribution de paniers aux familles",
+        "en": "Distributing baskets to families"
+      },
+      "is_featured": false
+    },
+    {
+      "category": "ramadan",
+      "image_url": "/images/gallery/ramadan/paniers-prets.webp",
+      "caption": {
+        "ar": "قفف جاهزة للتوزيع",
+        "fr": "Paniers prêts à être distribués",
+        "en": "Baskets ready for distribution"
+      },
+      "is_featured": false
+    },
+    {
+      "category": "eid",
+      "image_url": "/images/gallery/eid/viande-aid.webp",
+      "caption": {
+        "ar": "توزيع اللحوم",
+        "fr": "Distribution de viande",
+        "en": "Meat distribution"
+      },
+      "is_featured": false
+    },
+    {
+      "category": "aid",
+      "image_url": "/images/gallery/education/fournitures-scolaires.webp",
+      "caption": {
+        "ar": "أدوات مدرسية",
+        "fr": "Fournitures scolaires",
+        "en": "School supplies"
+      },
+      "is_featured": false
+    },
+    {
+      "category": "eid",
+      "image_url": "/images/gallery/eid/aid-vetements-garcon.webp",
+      "caption": {
+        "ar": "كسوة العيد",
+        "fr": "Habits de l'Aïd",
+        "en": "Eid outfits"
+      },
+      "is_featured": false
+    },
+    {
+      "category": "aid",
+      "image_url": "//images/gallery/aid/chargement-colis-camion.webp",
+      "caption": {
+        "ar": "تحميل الطرود داخل الشاحنة",
+        "fr": "Chargement des colis dans le camion",
+        "en": "Loading parcels into the truck"
+      },
+      "is_featured": false
+    },
+    {
+      "category": "aid",
+      "image_url": "//images/gallery/aid/mascotte-enfants.webp",
+      "caption": {
+        "ar": "لحظة فرح مع الأطفال",
+        "fr": "Un moment de joie avec les enfants",
+        "en": "A joyful moment with the children"
+      },
+      "is_featured": false
+    },
+    {
+      "category": "aid",
+      "image_url": "//images/gallery/education/cahiers-scolaires.webp",
+      "caption": {
+        "ar": "كراريس وأدوات مدرسية",
+        "fr": "Cahiers et fournitures scolaires",
+        "en": "Notebooks and school supplies"
+      },
+      "is_featured": false
+    },
+    {
+      "category": "team",
+      "image_url": "//images/gallery/team/benevoles-en-route.webp",
+      "caption": {
+        "ar": "متطوعو شباب الإحسان في الميدان",
+        "fr": "Les bénévoles de Chabab El Ihssan sur le terrain",
+        "en": "Chabab El Ihssan volunteers in the field"
+      },
+      "is_featured": false
+    },
+    {
+      "category": "team",
+      "image_url": "/images/gallery/team/nettoyage-lieu-de-culte-01.webp",
+      "caption": {
+        "ar": "حملة تنظيف بمشاركة الأطفال",
+        "fr": "Campagne de nettoyage avec les enfants",
+        "en": "Cleaning campaign with children"
+      },
+      "is_featured": false
+    },
+    {
+      "category": "team",
+      "image_url": "/images/gallery/team/nettoyage-lieu-de-culte-02.webp",
+      "caption": {
+        "ar": "متطوع يشارك في حملة التنظيف",
+        "fr": "Un jeune bénévole lors de la campagne de nettoyage",
+        "en": "A young volunteer during the cleaning campaign"
+      },
+      "is_featured": false
+    },
+    {
+      "category": "construction",
+      "image_url": "/images/gallery/construction/livraison-briques.webp",
+      "caption": {
+        "ar": "تفريغ الآجر بالرافعة",
+        "fr": "Déchargement des briques au chariot élévateur",
+        "en": "Unloading bricks with a forklift"
+      },
+      "is_featured": false
+    },
+    {
+      "category": "construction",
+      "image_url": "/images/gallery/construction/livraison-carrelage.webp",
+      "caption": {
+        "ar": "تفريغ مواد البناء",
+        "fr": "Déchargement de matériaux de construction",
+        "en": "Unloading building materials"
+      },
+      "is_featured": false
+    },
+    {
+      "category": "construction",
+      "image_url": "/images/gallery/construction/carrelage-djemila.webp",
+      "caption": {
+        "ar": "متطوع يحمل صناديق الزليج",
+        "fr": "Un bénévole transporte des cartons de carrelage",
+        "en": "A volunteer carrying tile boxes"
+      },
+      "is_featured": false
+    },
+    {
+      "category": "construction",
+      "image_url": "/images/gallery/construction/reception-carrelage.webp",
+      "caption": {
+        "ar": "استلام الزليج في ورشة البناء",
+        "fr": "Réception du carrelage sur le chantier",
+        "en": "Receiving tiles at the building site"
+      },
+      "is_featured": false
+    },
+    {
+      "category": "construction",
+      "image_url": "/images/gallery/construction/livraison-sable-01.webp",
+      "caption": {
+        "ar": "تفريغ الرمل في الورشة",
+        "fr": "Livraison de sable pour le chantier",
+        "en": "Sand delivery for the building site"
+      },
+      "is_featured": false
+    },
+    {
+      "category": "construction",
+      "image_url": "/images/gallery/construction/livraison-sable-02.webp",
+      "caption": {
+        "ar": "شاحنة الرمل أثناء التفريغ",
+        "fr": "Camion de sable en cours de déchargement",
+        "en": "Sand truck unloading"
+      },
+      "is_featured": false
+    },
+    {
+      "category": "construction",
+      "image_url": "/images/gallery/construction/ciment.webp",
+      "caption": {
+        "ar": "تسليم أكياس الإسمنت",
+        "fr": "Livraison des sacs de ciment",
+        "en": "Cement bags delivery"
+      },
+      "is_featured": false
+    },
+    {
+      "category": "construction",
+      "image_url": "/images/gallery/construction/fer-a-beton.webp",
+      "caption": {
+        "ar": "تسليم حديد البناء",
+        "fr": "Livraison du fer à béton",
+        "en": "Rebar delivery"
+      },
+      "is_featured": false
+    },
+    {
+      "category": "construction",
+      "image_url": "/images/gallery/construction/coulage-dalle.webp",
+      "caption": {
+        "ar": "صبّ سقف الخرسانة",
+        "fr": "Coulage de la dalle en béton",
+        "en": "Pouring the concrete slab"
+      },
+      "is_featured": false
+    },
+    {
+      "category": "construction",
+      "image_url": "/images/gallery/construction/chantier-interieur.webp",
+      "caption": {
+        "ar": "أشغال داخلية في ورشة البناء",
+        "fr": "Travaux intérieurs sur le chantier",
+        "en": "Interior works on the building site"
+      },
+      "is_featured": false
+    }
+  ]
+}

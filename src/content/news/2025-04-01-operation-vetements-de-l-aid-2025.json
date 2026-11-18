@@ -1,0 +1,20 @@
+{
+  "date": "2025-04-01",
+  "image_url": "/images/gallery/eid/aid-vetements-fille.webp",
+  "is_pinned": false,
+  "title": {
+    "ar": "عملية ملابس العيد 2025",
+    "fr": "Opération Vêtements de l'Aïd 2025",
+    "en": "Eid Clothes Operation 2025"
+  },
+  "description": {
+    "ar": "مكّن مشروع «ملابس العيد» من كسوة 318 طفلًا محتاجًا، ومنحهم الفرحة والكرامة في العيد.",
+    "fr": "Le projet « Vêtements de l'Aïd » a permis d'habiller 318 enfants démunis, leur offrant joie et dignité pour la fête.",
+    "en": "The “Eid Clothes” project clothed 318 needy children, giving them joy and dignity for the holiday."
+  },
+  "location": {
+    "ar": "الجزائر العاصمة",
+    "fr": "Alger",
+    "en": "Algiers"
+  }
+}

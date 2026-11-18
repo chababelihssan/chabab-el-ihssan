@@ -1,0 +1,22 @@
+{
+  "category": "project",
+  "date": "2025-04-03",
+  "end_date": null,
+  "image_url": "/images/gallery/water/eau-jaillit.webp",
+  "is_pinned": false,
+  "title": {
+    "ar": "حفر بئر ",
+    "fr": "Forage d'un puits artésien",
+    "en": "Artesian well drilling"
+  },
+  "description": {
+    "ar": "مشروع ميداني ملموس لجمعية شباب الإحسان.",
+    "fr": "Projet concret mené sur le terrain par Chabab El Ihssane.",
+    "en": "Concrete field project of Chabab El Ihssane."
+  },
+  "location": {
+    "ar": "الجنوب الكبير",
+    "fr": "Grand Sud",
+    "en": "Great South"
+  }
+}

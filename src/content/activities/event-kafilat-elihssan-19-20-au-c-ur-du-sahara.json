@@ -1,0 +1,22 @@
+{
+  "category": "event",
+  "date": "2025-05-01",
+  "end_date": null,
+  "image_url": "/images/gallery/caravans/kafila-sahara-rencontre.webp",
+  "is_pinned": false,
+  "title": {
+    "ar": "قافلة الإحسان ",
+    "fr": "Kafilat Elihssan",
+    "en": "Kafilat Elihssan "
+  },
+  "description": {
+    "ar": "قوافل إنسانية نحو تمنراست وأدرار.",
+    "fr": "Caravanes humanitaires vers Tamanrasset et Adrar.",
+    "en": "Humanitarian caravans to Tamanrasset and Adrar."
+  },
+  "location": {
+    "ar": "تمنراست وأدرار",
+    "fr": "Tamanrasset et Adrar",
+    "en": "Tamanrasset & Adrar"
+  }
+}

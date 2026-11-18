@@ -1,0 +1,20 @@
+{
+  "date": "2025-05-01",
+  "image_url": "/images/gallery/caravans/kafila-sahara-rencontre.webp",
+  "is_pinned": true,
+  "title": {
+    "ar": "قافلة الإحسان 19/20: في قلب الصحراء",
+    "fr": "Kafilat Elihssan 19/20 : Au Cœur du Sahara",
+    "en": "Kafilat Elihssan 19/20: In the Heart of the Sahara"
+  },
+  "description": {
+    "ar": "قوافلنا الإنسانية نحو الجنوب الكبير، تمنراست وأدرار، حملت دعمًا ماديًا ورسالة أخوّة إلى أسر معزولة، وعزّزت روابط التضامن الوطني.",
+    "fr": "Nos caravanes humanitaires vers le Grand Sud, à Tamanrasset et Adrar, ont apporté un soutien matériel et un message de fraternité à des familles isolées, renforçant ainsi les liens de solidarité nationale.",
+    "en": "Our humanitarian caravans to the Great South, in Tamanrasset and Adrar, brought material support and a message of brotherhood to isolated families, strengthening national solidarity."
+  },
+  "location": {
+    "ar": "تمنراست وأدرار",
+    "fr": "Tamanrasset et Adrar",
+    "en": "Tamanrasset & Adrar"
+  }
+}

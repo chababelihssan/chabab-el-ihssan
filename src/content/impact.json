@@ -1,0 +1,45 @@
+{
+  "title": {
+    "ar": "أثرنا في المجتمع",
+    "fr": "Notre Impact dans la Communauté",
+    "en": "Our Impact in the Community"
+  },
+  "stats": [
+    {
+      "icon": "meals",
+      "number": "557112",
+      "label": {
+        "ar": "وجبة موزّعة (رمضان + سحور)",
+        "fr": "Repas distribués (Ramadan + Suhoor)",
+        "en": "Meals distributed (Ramadan + Suhoor)"
+      }
+    },
+    {
+      "icon": "clothes",
+      "number": "1450",
+      "label": {
+        "ar": "كسوة موزّعة",
+        "fr": "Tenues distribuées",
+        "en": "Outfits distributed"
+      }
+    },
+    {
+      "icon": "moon",
+      "number": "+200",
+      "label": {
+        "ar": "ليلة رمضانية لحملة «وجبة السحور»",
+        "fr": "Nuits de Ramadan de la campagne « Repas du Suhoor »",
+        "en": "Ramadan nights of the “Suhoor Meals” campaign"
+      }
+    },
+    {
+      "icon": "caravan",
+      "number": "28",
+      "label": {
+        "ar": "قافلة إحسان للجنوب",
+        "fr": "Caravanes de bienfaisance vers le Sud",
+        "en": "Charity caravans to the South"
+      }
+    }
+  ]
+}

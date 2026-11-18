@@ -1,0 +1,22 @@
+{
+  "category": "event",
+  "date": "2025-03-01",
+  "end_date": null,
+  "image_url": "/images/gallery/ramadan/distribution-paniers.webp",
+  "is_pinned": false,
+  "title": {
+    "ar": "حملة «وجبة السحور» 2025",
+    "fr": "Campagne « Repas du Suhoor » 2025",
+    "en": "“Suhoor Meals” Campaign 2025"
+  },
+  "description": {
+    "ar": "أكثر من 13000 وجبة ساخنة خلال 28 ليلة من رمضان.",
+    "fr": "Plus de 13 000 repas chauds durant les 28 nuits du Ramadan.",
+    "en": "More than 13,000 hot meals over the 28 nights of Ramadan."
+  },
+  "location": {
+    "ar": "الجزائر العاصمة",
+    "fr": "Alger",
+    "en": "Algiers"
+  }
+}

@@ -1,0 +1,288 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+/* Palette du logo : on remplace toute l'échelle "blue" de Tailwind par du bordeaux. */
+@theme {
+    --color-blue-50: #fdf2f4;
+    --color-blue-100: #fbe4e8;
+    --color-blue-200: #f5c2cc;
+    --color-blue-300: #e994a5;
+    --color-blue-400: #d4607a;
+    --color-blue-500: #b3304f;
+    --color-blue-600: #96193c;
+    --color-blue-700: #7a1232;
+    --color-blue-800: #650f2a;
+    --color-blue-900: #520c22;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+.font-arabic {
+    font-family: 'Cairo', sans-serif;
+}
+
+/* Custom scrollbar for better aesthetics */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* ==========================================================================
+   Brand theme — matches the 2026 Instagram visual identity
+   (navy + red, grid paper, halftone dots, torn white paper, bold poster type)
+   ========================================================================== */
+:root {
+    --brand-navy: #7a1034;      /* bordeaux / burgundy (couleur principale) */
+    --brand-navy-dark: #4d0a21; /* bordeaux foncé */
+    --brand-red: #c8102e;       /* rouge du logo */
+    --brand-gold: #f2b705;      /* jaune (petites touches) */
+    --brand-paper: #f6f3ec;
+}
+
+.font-display {
+    font-family: 'Lalezar', 'Cairo', system-ui, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+}
+
+/* Navy background with a light grid, like the posters' graph paper */
+.bg-brand-grid {
+    background-color: var(--brand-navy);
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.09) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.09) 1px, transparent 1px);
+    background-size: 28px 28px;
+}
+
+/* Red background with navy dots */
+.bg-brand-dots {
+    background-color: var(--brand-red);
+    background-image: radial-gradient(rgba(77, 10, 33, 0.85) 2px, transparent 2.5px);
+    background-size: 26px 26px;
+}
+
+/* Light paper with faint dots for section backgrounds */
+.bg-brand-paper {
+    background-color: var(--brand-paper);
+    background-image: radial-gradient(rgba(122, 16, 52, 0.08) 1.5px, transparent 2px);
+    background-size: 22px 22px;
+}
+.dark .bg-brand-paper {
+    background-color: #0f172a;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1.5px, transparent 2px);
+}
+
+/* White "torn paper" card */
+.paper-torn {
+    background: #fff;
+    color: var(--brand-navy);
+    clip-path: polygon(0% 4%, 6% 1%, 13% 3%, 21% 0%, 30% 3%, 38% 1%, 47% 4%, 55% 1%, 63% 3%, 72% 0%, 80% 3%, 88% 1%, 95% 3%, 100% 1%,
+                       100% 96%, 94% 99%, 86% 97%, 78% 100%, 70% 97%, 61% 99%, 52% 96%, 44% 99%, 35% 97%, 27% 100%, 18% 97%, 10% 99%, 3% 97%, 0% 100%);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+.dark .paper-torn {
+    background: #f1f5f9;
+}
+
+/* Masking-tape strip decoration */
+.brand-tape {
+    position: relative;
+}
+.brand-tape::before {
+    content: '';
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    width: 90px;
+    height: 24px;
+    transform: translateX(-50%) rotate(-4deg);
+    background: rgba(240, 190, 170, 0.75);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+/* Poster-style section title with a red brush underline */
+.brand-title {
+    font-family: 'Lalezar', 'Cairo', system-ui, sans-serif;
+    color: var(--brand-navy);
+    position: relative;
+    display: inline-block;
+}
+.dark .brand-title {
+    color: #fff;
+}
+.brand-title::after {
+    content: '';
+    display: block;
+    height: 6px;
+    width: 60%;
+    margin: 6px auto 0;
+    background: var(--brand-red);
+    border-radius: 999px;
+    transform: rotate(-1.5deg);
+}
+
+/* Poster-style buttons */
+.btn-brand {
+    background: var(--brand-red);
+    color: #fff;
+    font-weight: 700;
+    border-radius: 0.6rem;
+    box-shadow: 4px 4px 0 var(--brand-navy-dark);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.btn-brand:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0 var(--brand-navy-dark);
+}
+.btn-brand-light {
+    background: #fff;
+    color: var(--brand-navy);
+    font-weight: 700;
+    border-radius: 0.6rem;
+    box-shadow: 4px 4px 0 var(--brand-red);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.btn-brand-light:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0 var(--brand-red);
+}
+
+/* ==========================================================================
+   Admin tables — one consistent style, scrollable on phones and tablets.
+   Unlayered on purpose so it wins over Tailwind utility classes on the cells.
+   ========================================================================== */
+.admin-table-wrap {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 0.9rem;
+    border: 1px solid #e5e7eb;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+.dark .admin-table-wrap {
+    border-color: #374151;
+    background: #1f2937;
+}
+.admin-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: 0.875rem;
+}
+.admin-table thead th {
+    background: var(--brand-navy);
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding: 0.8rem 1rem;
+    text-align: start;
+    white-space: nowrap;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    border-bottom: 3px solid var(--brand-red);
+}
+.admin-table tbody td {
+    padding: 0.75rem 1rem;
+    vertical-align: middle;
+    border-bottom: 1px solid #f1f5f9;
+}
+.dark .admin-table tbody td {
+    border-bottom-color: #374151;
+}
+.admin-table tbody tr:nth-child(even) td {
+    background: #f8fafc;
+}
+.dark .admin-table tbody tr:nth-child(even) td {
+    background: rgba(255, 255, 255, 0.03);
+}
+.admin-table tbody tr:hover td {
+    background: #eef2ff;
+}
+.dark .admin-table tbody tr:hover td {
+    background: rgba(99, 102, 241, 0.12);
+}
+.admin-table tbody tr:last-child td {
+    border-bottom: 0;
+}
+@media (max-width: 640px) {
+    .admin-table thead th,
+    .admin-table tbody td {
+        padding: 0.6rem 0.7rem;
+    }
+}
+
+
+
+/* ==========================================================================
+   Accessibilité
+   ========================================================================== */
+.skip-link {
+    position: fixed;
+    top: -4rem;
+    inset-inline-start: 0.75rem;
+    z-index: 100;
+    padding: 0.6rem 1rem;
+    border-radius: 0.5rem;
+    background: var(--brand-red);
+    color: #fff;
+    font-weight: 700;
+    transition: top 0.2s;
+}
+.skip-link:focus {
+    top: 0.75rem;
+}
+
+:focus-visible {
+    outline: 3px solid var(--brand-gold);
+    outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* ─── Skeleton + ظهور تدريجي للصور ─── */
+.img-skeleton {
+    color: transparent; /* إخفاء نص alt أثناء التحميل */
+    background: linear-gradient(90deg, #e5e7eb 25%, #f3f4f6 50%, #e5e7eb 75%);
+    background-size: 200% 100%;
+    animation: img-shimmer 1.4s ease-in-out infinite;
+}
+.dark .img-skeleton {
+    background: linear-gradient(90deg, #374151 25%, #4b5563 50%, #374151 75%);
+    background-size: 200% 100%;
+}
+.img-loaded { animation: img-fade-in 0.5s ease-out; }
+@keyframes img-shimmer { from { background-position: 200% 0; } to { background-position: -200% 0; } }
+@keyframes img-fade-in { from { opacity: 0; } to { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) {
+    .img-skeleton, .img-loaded { animation: none; }
+}

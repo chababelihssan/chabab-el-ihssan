@@ -1,0 +1,289 @@
+{
+  "heroImage": "/images/gallery/team/benevoles-en-route.webp",
+  "heroVideo": {
+    "src": "",
+    "youtubeId": "",
+    "poster": ""
+  },
+  "beforeAfter": [
+    {
+      "before": "/images/uploads/img-mwkw827169y.webp",
+      "after": "/images/gallery/water/eau-jaillit.webp",
+      "title": {
+        "ar": "حفر بئر ارتوازية",
+        "fr": "Forage d'un puits artésien",
+        "en": "Artesian well drilling"
+      },
+      "caption": {
+        "ar": "من أرض جافة إلى مصدر ماء دائم للأسر المحتاجة.",
+        "fr": "D'un terrain aride à une source d'eau durable pour les familles dans le besoin.",
+        "en": "From dry land to a lasting water source for families in need."
+      }
+    }
+  ],
+  "achievementPlaces": [
+    {
+      "lat": 35.37,
+      "lng": 1.32,
+      "name": {
+        "ar": "تيارت",
+        "fr": "Tiaret",
+        "en": "Tiaret"
+      },
+      "actions": [],
+      "label_side": "left"
+    },
+    {
+      "lat": 36.27,
+      "lng": 2.75,
+      "name": {
+        "ar": "المدية",
+        "fr": "Médéa",
+        "en": "Médéa"
+      },
+      "actions": [],
+      "label_side": "top"
+    },
+    {
+      "lat": 36.26,
+      "lng": 1.97,
+      "name": {
+        "ar": "عين الدفلى",
+        "fr": "Aïn Defla",
+        "en": "Aïn Defla"
+      },
+      "actions": [],
+      "label_side": "left"
+    },
+    {
+      "lat": 33.8,
+      "lng": 2.86,
+      "name": {
+        "ar": "الأغواط",
+        "fr": "Laghouat",
+        "en": "Laghouat"
+      },
+      "actions": [],
+      "label_side": "bottom"
+    },
+    {
+      "lat": 33.68,
+      "lng": 1.02,
+      "name": {
+        "ar": "البيض",
+        "fr": "El Bayadh",
+        "en": "El Bayadh"
+      },
+      "actions": [],
+      "label_side": "top"
+    },
+    {
+      "lat": 31.95,
+      "lng": 5.32,
+      "name": {
+        "ar": "ورقلة",
+        "fr": "Ouargla",
+        "en": "Ouargla"
+      },
+      "actions": [],
+      "label_side": "right"
+    },
+    {
+      "lat": 21.33,
+      "lng": 0.95,
+      "name": {
+        "ar": "برج باجي مختار",
+        "fr": "Bordj Badji Mokhtar",
+        "en": "Bordj Badji Mokhtar"
+      },
+      "actions": [],
+      "label_side": "right"
+    },
+    {
+      "lat": 30.13,
+      "lng": -2.17,
+      "name": {
+        "ar": "بني عباس",
+        "fr": "Béni Abbès",
+        "en": "Béni Abbès"
+      },
+      "actions": [],
+      "label_side": "left"
+    },
+    {
+      "lat": 33.37,
+      "lng": 6.86,
+      "name": {
+        "ar": "الوادي",
+        "fr": "El Oued",
+        "en": "El Oued"
+      },
+      "actions": [],
+      "label_side": "right"
+    },
+    {
+      "lat": 26.5,
+      "lng": 8.48,
+      "name": {
+        "ar": "إيليزي",
+        "fr": "Illizi",
+        "en": "Illizi"
+      },
+      "actions": [],
+      "label_side": "right"
+    },
+    {
+      "lat": 34.43,
+      "lng": 5.07,
+      "name": {
+        "ar": "أولاد جلال",
+        "fr": "Ouled Djellal",
+        "en": "Ouled Djellal"
+      },
+      "actions": [],
+      "label_side": "right"
+    },
+    {
+      "lat": 33.95,
+      "lng": 5.92,
+      "name": {
+        "ar": "المغير",
+        "fr": "El Meghaïer",
+        "en": "El Meghaïer"
+      },
+      "actions": [],
+      "label_side": "bottom"
+    },
+    {
+      "lat": 22.785,
+      "lng": 5.52,
+      "name": {
+        "ar": "تمنراست",
+        "fr": "Tamanrasset",
+        "en": "Tamanrasset"
+      },
+      "actions": [],
+      "label_side": "right"
+    },
+    {
+      "lat": 27.87,
+      "lng": -0.29,
+      "name": {
+        "ar": "أدرار",
+        "fr": "Adrar",
+        "en": "Adrar"
+      },
+      "actions": [],
+      "label_side": "left"
+    },
+    {
+      "lat": 30.58,
+      "lng": 2.88,
+      "name": {
+        "ar": "المنيعة",
+        "fr": "El Menia",
+        "en": "El Menia"
+      },
+      "actions": [],
+      "label_side": "right"
+    },
+    {
+      "lat": 29.26,
+      "lng": 0.23,
+      "name": {
+        "ar": "تيميمون",
+        "fr": "Timimoun",
+        "en": "Timimoun"
+      },
+      "actions": [],
+      "label_side": "right"
+    },
+    {
+      "lat": 27.67,
+      "lng": -8.15,
+      "name": {
+        "ar": "تندوف",
+        "fr": "Tindouf",
+        "en": "Tindouf"
+      },
+      "actions": [],
+      "label_side": "left"
+    },
+    {
+      "lat": 33.27,
+      "lng": -0.31,
+      "name": {
+        "ar": "النعامة",
+        "fr": "Naâma",
+        "en": "Naâma"
+      },
+      "actions": [],
+      "label_side": "left"
+    },
+    {
+      "lat": 34.67,
+      "lng": 3.26,
+      "name": {
+        "ar": "الجلفة",
+        "fr": "Djelfa",
+        "en": "Djelfa"
+      },
+      "actions": [],
+      "label_side": "top"
+    }
+  ],
+  "sadaqaProjects": [
+    {
+      "icon": "well",
+      "title": {
+        "ar": "حفر بئر ارتوازية",
+        "fr": "Forage de puits",
+        "en": "Well drilling"
+      },
+      "description": {
+        "ar": "توفير مياه الشرب النظيفة لقرية أو لمجموعة من الأسر لسنوات طويلة.",
+        "fr": "Fournir de l'eau potable à un village ou à plusieurs familles pendant de longues années.",
+        "en": "Provide clean drinking water to a village or several families for many years."
+      }
+    },
+    {
+      "icon": "school",
+      "title": {
+        "ar": "بناء المدارس وترميمها",
+        "fr": "Construction et rénovation d'écoles",
+        "en": "Building and renovating schools"
+      },
+      "description": {
+        "ar": "توفير بيئة تعليمية لائقة للأطفال، يستفيد منها جيل بعد جيل.",
+        "fr": "Offrir un cadre scolaire digne aux enfants, au profit de générations successives.",
+        "en": "Provide a decent learning environment for children, benefiting generation after generation."
+      }
+    },
+    {
+      "icon": "ambulance",
+      "title": {
+        "ar": "سيارة إسعاف",
+        "fr": "Ambulance",
+        "en": "Ambulance"
+      },
+      "description": {
+        "ar": "نقل المرضى والحالات المستعجلة إلى المستشفيات في الوقت المناسب.",
+        "fr": "Transporter à temps les malades et les urgences vers les hôpitaux.",
+        "en": "Carry patients and emergencies to hospitals on time."
+      }
+    },
+    {
+      "icon": "tank",
+      "title": {
+        "ar": "بناء خزانات المياه",
+        "fr": "Construction de citernes",
+        "en": "Building water tanks"
+      },
+      "description": {
+        "ar": "خزانات تحفظ الماء للأسر المحتاجة وتخدمها بصفة دائمة.",
+        "fr": "Des citernes qui conservent l'eau pour les familles dans le besoin, de façon durable.",
+        "en": "Tanks that store water for families in need and serve them permanently."
+      }
+    }
+  ]
+}

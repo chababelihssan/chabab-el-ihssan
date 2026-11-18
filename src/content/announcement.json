@@ -1,0 +1,16 @@
+{
+  "enabled": false,
+  "text": {
+    "ar": "حملة رمضان مفتوحة",
+    "fr": "",
+    "en": ""
+  },
+  "link": "/donate",
+  "button": {
+    "ar": "تبرّع الآن",
+    "fr": "Faire un don",
+    "en": "Donate"
+  },
+  "color": "green",
+  "end_date": ""
+}

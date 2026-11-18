@@ -1,0 +1,8 @@
+{
+  "enabled": true,
+  "start_date": "2027-02-08",
+  "days": 30,
+  "show_days_before": 60,
+  "basket_price": 3000,
+  "fitr_amount": 150
+}

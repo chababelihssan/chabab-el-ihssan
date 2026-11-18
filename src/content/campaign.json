@@ -1,0 +1,16 @@
+{
+  "enabled": true,
+  "endDate": "2026-11-28T18:27:00",
+  "goal": 9230,
+  "raised": 2499,
+  "title": {
+    "ar": "حملة سيارات إسعاف",
+    "fr": "Campagne : Ambulances",
+    "en": "Ambulance campaign"
+  },
+  "description": {
+    "ar": "ساهم في تجهيز سيارات إسعاف لنقل المرضى والمحتاجين إلى المستشفيات في الوقت المناسب. كل تبرع، مهما كان صغيراً، ينقذ حياة.",
+    "fr": "Aidez-nous à équiper des ambulances pour transporter à temps les malades et les personnes dans le besoin vers les hôpitaux. Chaque don, même petit, peut sauver une vie.",
+    "en": "Help us equip ambulances to carry patients and people in need to hospitals on time. Every donation, however small, can save a life."
+  }
+}

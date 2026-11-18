@@ -1,0 +1,20 @@
+{
+  "date": "2025-03-01",
+  "image_url": "/images/gallery/ramadan/distribution-paniers.webp",
+  "is_pinned": false,
+  "title": {
+    "ar": "حملة «وجبة السحور» 2025",
+    "fr": "Campagne « Repas du Suhoor » 2025",
+    "en": "“Suhoor Meals” Campaign 2025"
+  },
+  "description": {
+    "ar": "خلال 28 ليلة من رمضان، وزّعت حملتنا أكثر من ثلاثة عشر ألف وجبة ساخنة على عمّال الليل والمشرّدين، تعبيرًا عن التضامن والعرفان لهؤلاء حرّاس الليل.",
+    "fr": "Durant les 28 nuits du Ramadan, notre campagne « Repas du Suhoor » a distribué plus de treize mille repas chauds aux travailleurs de nuit et aux sans-abris, un geste de solidarité et de reconnaissance envers ces sentinelles de la nuit.",
+    "en": "During the 28 nights of Ramadan, our campaign distributed more than thirteen thousand hot meals to night workers and the homeless, a gesture of solidarity and recognition for these night sentinels."
+  },
+  "location": {
+    "ar": "الجزائر العاصمة",
+    "fr": "Alger",
+    "en": "Algiers"
+  }
+}

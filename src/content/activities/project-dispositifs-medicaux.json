@@ -1,0 +1,22 @@
+{
+  "category": "project",
+  "date": "2025-04-02",
+  "end_date": null,
+  "image_url": "https://chababelihssan.com/wp-content/uploads/2025/04/IMG_7194-scaled.jpg",
+  "is_pinned": false,
+  "title": {
+    "ar": "أجهزة طبية",
+    "fr": "Dispositifs médicaux",
+    "en": "Medical devices"
+  },
+  "description": {
+    "ar": "مشروع ميداني ملموس لجمعية شباب الإحسان.",
+    "fr": "Projet concret mené sur le terrain par Chabab El Ihssane.",
+    "en": "Concrete field project of Chabab El Ihssane."
+  },
+  "location": {
+    "ar": "الجزائر العاصمة",
+    "fr": "Alger",
+    "en": "Algiers"
+  }
+}

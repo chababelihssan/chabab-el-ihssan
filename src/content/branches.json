@@ -1,0 +1,14 @@
+{
+  "branches": [
+    {
+      "city": "Kouba",
+      "name": "Chabab El Ihssan",
+      "address": "Chabab El Ihssan Jolie Vue, Kouba, Alger, Algérie",
+      "phone": "0557343528 / 0774068287",
+      "email": "chababelihssan@gmail.com",
+      "lat": 36.7253,
+      "lng": 3.0817,
+      "google_map_link": "https://maps.app.goo.gl/RGu31JAM5AmvEoFUA"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "category": "project",
+  "date": "2025-04-01",
+  "end_date": null,
+  "image_url": "https://chababelihssan.com/wp-content/uploads/2023/04/IMG_1079-1024x768.jpg",
+  "is_pinned": true,
+  "title": {
+    "ar": "أجهزة كهرومنزلية",
+    "fr": "Appareils électroménagers",
+    "en": "Household appliances"
+  },
+  "description": {
+    "ar": "مشروع ميداني ملموس لجمعية شباب الإحسان.",
+    "fr": "Projet concret mené sur le terrain par Chabab El Ihssane.",
+    "en": "Concrete field project of Chabab El Ihssane."
+  },
+  "location": {
+    "ar": "الجزائر العاصمة",
+    "fr": "Alger",
+    "en": "Algiers"
+  }
+}

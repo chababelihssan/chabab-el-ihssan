@@ -1,0 +1,22 @@
+{
+  "category": "event",
+  "date": "2025-04-01",
+  "end_date": null,
+  "image_url": "/images/gallery/eid/aid-vetements-fille.webp",
+  "is_pinned": false,
+  "title": {
+    "ar": "عملية ملابس العيد 2025",
+    "fr": "Opération Vêtements de l'Aïd 2025",
+    "en": "Eid Clothes Operation 2025"
+  },
+  "description": {
+    "ar": "كسوة 318 طفلًا محتاجًا بمناسبة العيد.",
+    "fr": "318 enfants démunis habillés pour la fête.",
+    "en": "318 needy children clothed for the holiday."
+  },
+  "location": {
+    "ar": "الجزائر العاصمة",
+    "fr": "Alger",
+    "en": "Algiers"
+  }
+}

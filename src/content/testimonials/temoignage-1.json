@@ -1,0 +1,15 @@
+{
+  "name": "Facebook user",
+  "is_approved": true,
+  "image_url": "",
+  "role": {
+    "ar": "مستخدم فيسبوك",
+    "fr": "Utilisateur Facebook",
+    "en": "Facebook user"
+  },
+  "content": {
+    "ar": "Rabi ykaderkoum",
+    "fr": "Rabi ykaderkoum",
+    "en": "Rabi ykaderkoum"
+  }
+}

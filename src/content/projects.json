@@ -1,0 +1,331 @@
+{
+  "categories": [
+    {
+      "id": "weekly",
+      "image": "/images/gallery/team/nettoyage-lieu-de-culte-01.webp",
+      "title": {
+        "ar": "حملات أسبوعية",
+        "fr": "Campagnes hebdomadaires",
+        "en": "Weekly campaigns"
+      },
+      "description": {
+        "ar": "أنشطة منتظمة تتجدد كل أسبوع.",
+        "fr": "Des actions régulières qui se renouvellent chaque semaine.",
+        "en": "Regular actions renewed every week."
+      },
+      "items": [
+        {
+          "id": "w1",
+          "image": "/images/gallery/team/nettoyage-lieu-de-culte-02.webp",
+          "title": {
+            "ar": "تنظيف المسجد",
+            "fr": "Nettoyage de la mosquée",
+            "en": "Mosque cleaning"
+          }
+        },
+        {
+          "id": "w2",
+          "image": "/images/gallery/ramadan/panier-legumes-preparation.webp",
+          "title": {
+            "ar": "سلة الخضر",
+            "fr": "Panier à légumes",
+            "en": "Vegetable basket"
+          }
+        }
+      ]
+    },
+    {
+      "id": "seasonal",
+      "image": "/images/gallery/caravans/kafila-dechargement.webp",
+      "title": {
+        "ar": "حملات موسمية",
+        "fr": "Campagnes saisonnières",
+        "en": "Seasonal campaigns"
+      },
+      "description": {
+        "ar": "حملات تُنظَّم في مواسم محددة من السنة.",
+        "fr": "Des campagnes organisées à des périodes précises de l'année.",
+        "en": "Campaigns organised at specific times of the year."
+      },
+      "items": [
+        {
+          "id": "s1",
+          "image": "/images/gallery/education/cahiers-scolaires.webp",
+          "title": {
+            "ar": "حقيبة إحسان",
+            "fr": "Cartable Ihssan",
+            "en": "Ihssan school bag"
+          }
+        },
+        {
+          "id": "s2",
+          "image": "/images/gallery/caravans/kafila-matelas.webp",
+          "title": {
+            "ar": "قوافل إحسان",
+            "fr": "Kawafil Ihssan",
+            "en": "Ihssan caravans"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ramadan",
+      "image": "/images/gallery/eid/aid-vetements-fille.webp",
+      "title": {
+        "ar": "حملات رمضان",
+        "fr": "Campagnes du Ramadan",
+        "en": "Ramadan campaigns"
+      },
+      "description": {
+        "ar": "مشاريع شهر رمضان والعيد.",
+        "fr": "Les projets du mois de Ramadan et de l'Aïd.",
+        "en": "Projects of the month of Ramadan and Eid."
+      },
+      "items": [
+        {
+          "id": "r1",
+          "image": "/images/gallery/ramadan/paniers-prets.webp",
+          "title": {
+            "ar": "مطعم إحسان",
+            "fr": "Restaurant Ihssan",
+            "en": "Ihssan restaurant"
+          }
+        },
+        {
+          "id": "r2",
+          "image": "/images/gallery/ramadan/distribution-paniers.webp",
+          "title": {
+            "ar": "السحور",
+            "fr": "Repas du Suhoor",
+            "en": "Suhoor meals"
+          }
+        },
+        {
+          "id": "r3",
+          "image": "/images/gallery/ramadan/distribution-paniers.webp",
+          "title": {
+            "ar": "قفة رمضان",
+            "fr": "Couffin du Ramadan",
+            "en": "Ramadan food basket"
+          }
+        },
+        {
+          "id": "r4",
+          "image": "/images/gallery/ramadan/paniers-prets.webp",
+          "title": {
+            "ar": "قفة العيد",
+            "fr": "Couffin de l'Aïd",
+            "en": "Eid food basket"
+          }
+        },
+        {
+          "id": "r5",
+          "image": "/images/gallery/eid/aid-vetements-garcon.webp",
+          "title": {
+            "ar": "لبسة العيد",
+            "fr": "Vêtements de l'Aïd",
+            "en": "Eid clothes"
+          }
+        },
+        {
+          "id": "r6",
+          "image": "/images/gallery/eid/viande-aid.webp",
+          "title": {
+            "ar": "زكاة الفطر",
+            "fr": "Zakat el-Fitr",
+            "en": "Zakat al-Fitr"
+          }
+        }
+      ]
+    },
+    {
+      "id": "siqaya",
+      "image": "/images/gallery/water/forage-puits-01.webp",
+      "title": {
+        "ar": "مشاريع سقيا",
+        "fr": "Projets Siqaya (eau)",
+        "en": "Siqaya projects (water)"
+      },
+      "description": {
+        "ar": "مشاريع توفير الماء للأسر المحتاجة.",
+        "fr": "Des projets pour fournir de l'eau aux familles dans le besoin.",
+        "en": "Projects providing water to families in need."
+      },
+      "items": [
+        {
+          "id": "q1",
+          "image": "/images/gallery/water/forage-puits-02.webp",
+          "title": {
+            "ar": "حفر الآبار",
+            "fr": "Forage de puits",
+            "en": "Well drilling"
+          }
+        },
+        {
+          "id": "q2",
+          "image": "/images/gallery/water/chateau-eau.webp",
+          "title": {
+            "ar": "بناء الخزانات",
+            "fr": "Construction de citernes",
+            "en": "Building water tanks"
+          }
+        },
+        {
+          "id": "q3",
+          "image": "/images/gallery/water/fontaine-sadaqa-jariya.webp",
+          "title": {
+            "ar": "آلات تبريد المياه",
+            "fr": "Refroidisseurs d'eau",
+            "en": "Water coolers"
+          }
+        },
+        {
+          "id": "q4",
+          "image": "/images/gallery/water/eau-jaillit.webp",
+          "title": {
+            "ar": "توزيع المياه",
+            "fr": "Distribution d'eau",
+            "en": "Water distribution"
+          }
+        }
+      ]
+    },
+    {
+      "id": "okfoulni",
+      "image": "/images/gallery/aid/mascotte-enfants.webp",
+      "title": {
+        "ar": "مشاريع اكفلني",
+        "fr": "Projets Okfoulni",
+        "en": "Okfoulni projects"
+      },
+      "description": {
+        "ar": "مشاريع الكفالة.",
+        "fr": "Les projets de parrainage.",
+        "en": "Sponsorship projects."
+      },
+      "items": []
+    },
+    {
+      "id": "wartil",
+      "image": "/images/gallery/construction/chantier-structure.webp",
+      "title": {
+        "ar": "مشروع ورتّل",
+        "fr": "Projet Wartil",
+        "en": "Wartil project"
+      },
+      "description": {
+        "ar": "مشروع خاص ببناء المدارس وترميمها.",
+        "fr": "Un projet dédié à la construction et à la rénovation d'écoles.",
+        "en": "A project dedicated to building and renovating schools."
+      },
+      "items": [
+        {
+          "id": "a1",
+          "image": "/images/gallery/construction/coulage-dalle.webp",
+          "title": {
+            "ar": "بناء مدارس",
+            "fr": "Construction d'écoles",
+            "en": "Building schools"
+          }
+        },
+        {
+          "id": "a2",
+          "image": "/images/gallery/construction/chantier-interieur.webp",
+          "title": {
+            "ar": "ترميم مدارس",
+            "fr": "Rénovation d'écoles",
+            "en": "Renovating schools"
+          }
+        },
+        {
+          "id": "a3",
+          "image": "/images/gallery/construction/livraison-briques.webp",
+          "title": {
+            "ar": "تفريغ الآجر",
+            "fr": "Déchargement des briques",
+            "en": "Unloading bricks"
+          }
+        },
+        {
+          "id": "a4",
+          "image": "/images/gallery/construction/ciment.webp",
+          "title": {
+            "ar": "الإسمنت",
+            "fr": "Ciment",
+            "en": "Cement"
+          }
+        },
+        {
+          "id": "a5",
+          "image": "/images/gallery/construction/fer-a-beton.webp",
+          "title": {
+            "ar": "حديد البناء",
+            "fr": "Fer à béton",
+            "en": "Rebar"
+          }
+        },
+        {
+          "id": "a6",
+          "image": "/images/gallery/construction/livraison-sable-01.webp",
+          "title": {
+            "ar": "الرمل",
+            "fr": "Sable",
+            "en": "Sand"
+          }
+        },
+        {
+          "id": "a7",
+          "image": "/images/gallery/construction/carrelage-djemila.webp",
+          "title": {
+            "ar": "الزليج",
+            "fr": "Carrelage",
+            "en": "Tiles"
+          }
+        },
+        {
+          "id": "a8",
+          "image": "/images/gallery/construction/chantier-structure.webp",
+          "title": {
+            "ar": "هيكل البناء",
+            "fr": "Structure du bâtiment",
+            "en": "Building structure"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mouftaraqat",
+      "image": "/images/gallery/aid/livraison-couvertures-huile.webp",
+      "title": {
+        "ar": "مفترقات",
+        "fr": "Mouftaraqat",
+        "en": "Mouftaraqat"
+      },
+      "description": {
+        "ar": "توزيع القفف والزكاة.",
+        "fr": "Distribution de couffins et de la zakat.",
+        "en": "Distribution of food baskets and zakat."
+      },
+      "items": [
+        {
+          "id": "m1",
+          "image": "/images/gallery/aid/chargement-colis-camion.webp",
+          "title": {
+            "ar": "توزيع قفف",
+            "fr": "Distribution de couffins",
+            "en": "Food basket distribution"
+          }
+        },
+        {
+          "id": "m2",
+          "image": "/images/gallery/aid/livraison-couvertures-huile.webp",
+          "title": {
+            "ar": "زكاة",
+            "fr": "Zakat",
+            "en": "Zakat"
+          }
+        }
+      ]
+    }
+  ]
+}

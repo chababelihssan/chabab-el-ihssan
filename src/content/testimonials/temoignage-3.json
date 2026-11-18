@@ -1,0 +1,15 @@
+{
+  "name": "Facebook user",
+  "is_approved": false,
+  "image_url": "",
+  "role": {
+    "ar": "مستخدم فيسبوك",
+    "fr": "Utilisateur Facebook",
+    "en": "Facebook user"
+  },
+  "content": {
+    "ar": "Baraakallah fikoum. Allah yjealha du mizan hassanat 🤲",
+    "fr": "Baraakallah fikoum. Allah yjealha du mizan hassanat 🤲",
+    "en": "Baraakallah fikoum. Allah yjealha du mizan hassanat 🤲"
+  }
+}
